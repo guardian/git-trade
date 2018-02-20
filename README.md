@@ -54,3 +54,7 @@ For example, if you want to merge a few commits together you should:
 You are provided with an editor in which you can make your changes. It is 
 more or less self-documenting. I generally use `squash` and `fix-up` as well
 as taking advantage of the ability to re-order.
+
+## Cherry-picking
+Cherry-picking allows you to pull in commits onto a new branch. This can allow
+you to unpick accidental merges or start over on a new branch.
