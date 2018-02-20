@@ -1,9 +1,21 @@
 # git-trade
 A demo repo for playing with various git features
 
+# Git settings
+The starting point for my git settings comes from 
+[Scott Nonnenberg](https://blog.scottnonnenberg.com/better-git-configuration/). 
+I didn't adopt everything, but it's a great starting point.
+
+Some highlights are:
+ - GPG signing
+ - glog: shortcut to a colourful log rendition 
+
 # Merging vs. Rebasing
 It is my opinion that when you are working on a feature branch and want to pull
 in latest master you should rebase instead of merge.
+
+I recommend that you set `ff = only` to ensure you don't accidentally merge 
+(that's in Scott's settings too).
 
 # Resolving conflicts
 When git fails to deal with conflicts for you, it can be error prone and hard
