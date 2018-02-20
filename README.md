@@ -4,7 +4,7 @@ A demo repo for documenting and playing with various git features
 ## Git settings
 The starting point for my git settings comes from 
 [Scott Nonnenberg](https://blog.scottnonnenberg.com/better-git-configuration/). 
-I didn't adopt everything, but it's a great starting point.
+I adopted *everything*, but it's a great starting point.
 
 Some highlights are:
  - GPG signing
