@@ -58,3 +58,28 @@ as taking advantage of the ability to re-order.
 ## Cherry-picking
 Cherry-picking allows you to pull in commits onto a new branch. This can allow
 you to unpick accidental merges or start over on a new branch.
+
+## Adding a subset of changes (patch mode)
+If you have been working on a bunch of changes and have realised that the
+changes you've made should really be two or more separate commits then
+`git add -p` is your friend (also available in Sourcetree and all other good 
+UIs).
+
+This command allows you to stage "hunks" of a file for add without adding
+every change within a file.  
+
+## Moving files
+You should always try to use `git mv` when moving files around in order
+to ensure that git records the change as a move instead of a delete
+followed by an add. Git will try to track moves even if you don't use
+this command explicitly but won't always figure it out.
+
+Git tries to track file moves automatically even if you don't mark it as such 
+but once more than mumble% of a file changes it will assume it's not the same 
+file and should be deleted and then added. If you are moving a file it often 
+makes sense to move the file in one commit and then making edits in another 
+commit - this makes it much more likely that git will track changes correctly 
+making rebasing significantly easier. 
+
+If you've done a bunch of changes and forgotten to use move you may find that 
+`git add -A .` will correctly figure out the changes that have been made.
