@@ -38,3 +38,9 @@ work. There are plenty of tools to make it easier. Simon uses intelliJ. You can
 set it up as a mergetool using the command line (see [here](http://brian.pontarelli.com/2013/10/25/using-idea-for-git-merging-and-diffing/)) 
 but that doesn't work particularly well - it's typically easier to use it when 
 you have the project open.
+
+## Interactive rebasing
+A great pull request is one that tells a story. A great story is one that has
+a compelling narative arc that doesn't jump around all over the place all of
+the time. Frequently you'll want to make a change that really belongs in an
+earlier commit. Interactive rebasing is the way to easily achieve this.
