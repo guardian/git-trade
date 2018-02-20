@@ -25,6 +25,13 @@ in latest master you should rebase instead of merge.
 I recommend that you set `ff = only` to ensure you don't accidentally merge 
 (that's in Scott's settings too).
 
+When you are doing rebasing you'll be re-writing the remote branch in a way
+that violates the immutable properties that we get with merging. You should:
+ - be aware of this
+ - proceed with care if you're not the only person working on a branch
+ - use `git push --force-with-lease` instead of `git push --force` (you might
+   want to add an alias to .gitconfig - I have `pushf = push --force-with-lease`)
+
 ## Resolving conflicts
 When git fails to deal with conflicts for you, it can be error prone and hard
 work. There are plenty of tools to make it easier. Simon uses intelliJ. You can
