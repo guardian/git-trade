@@ -4,7 +4,7 @@ A demo repo for documenting and playing with various git features
 ## Git settings
 The starting point for my git settings comes from 
 [Scott Nonnenberg](https://blog.scottnonnenberg.com/better-git-configuration/). 
-I adopted *everything*, but it's a great starting point.
+Simon didn't adopt everything, but he thinks it is a great starting point.
 
 Some highlights are:
  - GPG signing
@@ -52,7 +52,7 @@ For example, if you want to merge a few commits together you should:
  - run `git rebase -i <parent-commit-ref>`
 
 You are provided with an editor in which you can make your changes. It is 
-more or less self-documenting. I generally use `squash` and `fix-up` as well
+more or less self-documenting. Simon generally uses `squash` and `fix-up` as well
 as taking advantage of the ability to re-order.
 
 ## Cherry-picking
