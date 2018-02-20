@@ -41,6 +41,16 @@ you have the project open.
 
 ## Interactive rebasing
 A great pull request is one that tells a story. A great story is one that has
-a compelling narative arc that doesn't jump around all over the place all of
+a compelling narrative arc that doesn't jump around all over the place all of
 the time. Frequently you'll want to make a change that really belongs in an
 earlier commit. Interactive rebasing is the way to easily achieve this.
+
+For example, if you want to merge a few commits together you should:
+ - make all of your commits 
+ - ensure your workspace is clean 
+ - identify a parent commit that is earlier than any commit you want to re-write
+ - run `git rebase -i <parent-commit-ref>`
+
+You are provided with an editor in which you can make your changes. It is 
+more or less self-documenting. I generally use `squash` and `fix-up` as well
+as taking advantage of the ability to re-order.
