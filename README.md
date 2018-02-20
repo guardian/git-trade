@@ -10,6 +10,14 @@ Some highlights are:
  - GPG signing
  - glog: shortcut to a colourful log rendition 
 
+# Command line tools
+[`git-radar`](https://github.com/michaeldfallen/git-radar) is super convenient 
+for seeing the status of a repo on the command line. There are also lightweight
+variants. This shows your current branch and an overview of status and stash. 
+
+[`hub`](https://hub.github.com/) allows you to add a number of GitHub specific
+commands to git such as `git pull-request` to open a PR from the command line.
+
 # Merging vs. Rebasing
 It is my opinion that when you are working on a feature branch and want to pull
 in latest master you should rebase instead of merge.
@@ -24,10 +32,3 @@ set it up as a mergetool using the command line (see [here](http://brian.pontare
 but that doesn't work particularly well - it's typically easier to use it when 
 you have the project open.
 
-# Command line tools
-[`git-radar`](https://github.com/michaeldfallen/git-radar) is super convenient 
-for seeing the status of a repo on the command line. There are also lightweight
-variants. This shows your current branch and an overview of status and stash. 
-
-[`hub`](https://hub.github.com/) allows you to add a number of GitHub specific
-commands to git such as `git pull-request` to open a PR from the command line.
